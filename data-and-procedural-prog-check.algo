@@ -44,3 +44,12 @@ BEGIN
     END_WHILE
     WRITE ("The sum of the distinct elements is", sum);
 END
+
+
+PROCEDURE dot_product (n: INTEGER, vectorOne:ARRAY_OF FLOAT,vectorTwo:ARRAY_OF FLOAT, VAR ps: FLOAT)
+VAR
+    i, j: INTEGER;
+BEGIN
+    FOR i FROM 0 TO n-1 DO
+    ps:= ps + vectorOne[i]*vectorTwo[i];
+END
